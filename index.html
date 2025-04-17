@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap to Earn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tap to Earn</h1>
+            <nav>
+                <button class="menu-btn">Menu</button>
+            </nav>
+        </header>
+
+        <div class="menu">
+            <button class="transfer-btn">Transfer</button>
+            </div>
+
+        <div class="mining-area">
+            <button id="tapButton">TAP TO EARN</button>
+            <p>Your Points: <span id="points">0</span></p>
+            <p>Level: <span id="level">1</span> / 10</p>
+            <p>Points Needed for Next Level: <span id="nextLevelPoints">100</span></p>
+        </div>
+
+        <div class="deposit-withdraw">
+            <h2>Deposit USDT</h2>
+            <p>Wallet Address: <span>####</span></p>
+            <p>Level Prices:</p>
+            <ul id="levelPrices">
+                <li>Level 1: Free</li>
+                <li>Level 2: 1 USDT</li>
+                <li>Level 3: 2 USDT</li>
+                </ul>
+            <button id="depositButton">Deposit</button>
+
+            <h2>Withdrawal</h2>
+            <p>Minimum Withdrawal: 10,000,000 Points (Manual)</p>
+            <p>Contact admin for withdrawal.</p>
+        </div>
+
+        <div class="notification-area" id="notification"></div>
+    </div>
+
+    <div class="registration-login-overlay" id="authOverlay">
+        <div class="auth-container">
+            <button id="showLogin">Login</button>
+            <button id="showRegister">Register</button>
+
+            <div id="loginForm" class="auth-form">
+                <h2>Login</h2>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button id="loginSubmit">Login</button>
+            </div>
+
+            <div id="registerForm" class="auth-form hidden">
+                <h2>Register</h2>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="tel" placeholder="Phone Number">
+                <button id="registerSubmit">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
